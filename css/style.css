@@ -1,0 +1,161 @@
+/* style.css */
+
+/* CSS에서 style 문서 불러오기 <- 쓰는 이유:내용을 줄이기 위해서*/
+@import "./reset.css";
+/* 웹 폰트: Crimson, Noto Sans KR */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Sans+KR:wght@400;500;700&display=swap");
+
+/* 
+font-family: 'Crimson Text', serif;
+font-family: 'Noto Sans KR', sans-serif;
+ */
+/* root=html이라고 보기 / 변수가 전역적으로 선언됨 */
+/* 변수 제목은 의미있게 알아서 설정 */
+:root {
+  --main-color: #0c2d83;
+  --bg-color-light: #f5f5f5;
+  --text-light: #666;
+  --white: #fff;
+  /* var(변수) < ()에 넣으면 됨 */
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  background-color: var(--white);
+}
+h1 {
+  font-family: "Crimson Text", serif;
+  font-size: 26px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 20px;
+}
+
+a {
+  color: #000;
+}
+.container {
+  max-width: 1440px; /*고정+가변 / 기본컨테이너는1440*/
+  /* border: 2px solid black; */
+  position: relative;
+  margin: 0 auto;
+  /* container 만들어서 넓이를 잡는데 용이  */
+  /* 왜 80을 저기다 잡지 */
+}
+#main-header {
+  height: 80px;
+  background-color: #fff;
+}
+#main-header h1 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+#gnb {
+  position: absolute;
+  right: 97px;
+  top: 28px;
+  z-index: 10;
+  /* gnb < 가 제일 z-index 높게 잡아야함  <- depth2 때문에 */
+}
+
+/* 1단계 메뉴 */
+#gnb .depth1 {
+  display: flex;
+}
+#gnb .depth1 > li {
+  margin-left: 20px;
+  /* border: 1px solid rebeccapurple; */
+  width: 7em;
+  text-align: center;
+}
+#gnb .depth1 > li > a {
+  font-weight: 500;
+  font-size: 18px;
+}
+/* 글자 색상바꾸기 */
+#gnb .depth1 > li > a:hover {
+  color: var(--main-color);
+}
+
+/* 2단계 메뉴 */
+#gnb .depth2 {
+  background-color: #fff;
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+  margin-top: 26px;
+  display: none;
+}
+#gnb .depth2 > li {
+  margin-bottom: 10px;
+  text-align: left;
+  /* center로 해도 됨  */
+}
+#gnb .depth2 > li:last-child {
+  margin-bottom: 0;
+  /* 너무 띄어져있어서(패딩+마진 마텀 합해서 커짐) 0 한거임 */
+}
+/* hover 액션 드롭다운 추가해보기*/
+/* depth1 li에 마우스가 올라가면 depth2 보이기 */
+#gnb .depth1 > li:hover .depth2 {
+  display: block;
+}
+#gnb .depth2 > li > a:hover {
+  text-decoration: underline;
+}
+
+#main-header .btn-toggle {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+/* 메인배너 */
+#main-banner {
+  height: 480px;
+  background-color: #000;
+}
+#main-banner > .container {
+  height: 100%;
+  background-image: url(../images/contents/main-banner1.jpg);
+  display: flex;
+  align-items: center;
+}
+#main-banner h1 {
+  color: #fff;
+  margin-left: 53px;
+  font-size: 57px;
+  font-weight: 400;
+  /* normal=400, bold=700 */
+}
+/* Introduction */
+#intro .container {
+  padding: 50px 20px;
+  outline: 1px solid black;
+  width: 100%;
+}
+#intro .container .intro-list {
+  /* outline: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+}
+#intro .container .intro-list li {
+  /* outline: 1px solid red; */
+  width: calc((100% - 60px) / 4);
+  text-align: center;
+}
+#intro .container .intro-list > li img {
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+/* Intro */
+#intro .container > h1 {
+  /* outline: 1px solid red; */
+  margin-bottom: 20px;
+}
+#intro .container .intro-list h2 {
+  margin-bottom: 10px;
+}
