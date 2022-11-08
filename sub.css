@@ -1,0 +1,36 @@
+/* sub.css */
+
+/* sub page용 타이틀 (서브 공통) */
+#sub-title h1 {
+  font-size: 40px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 고유 영역 */
+/* about */
+#sub-title {
+  height: 300px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+#about #sub-title {
+  background-image: url(../images/contents/sub-title-visual.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#about #lnb ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#about #lnb ul a {
+  margin-left: 40px;
+  font-size: 16px;
+  font-weight: 500;
+}
