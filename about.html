@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>숙명여자대학교 무용과</title>
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- 내 자바스크립트 -->
+  <script src="../js/main.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="sub.css">
+</head>
+
+<!-- 서브 페이지명을 about이라고 잡아줌 -> css에서 유용 / h.p랑 겹치지 않음 -->
+
+<body id="about">
+  <header id="main-header">
+    <div class="container">
+      <h1>
+        <a href="./">
+          <img src="../images/contents/logo.png" alt="숙대무용과">
+        </a>
+      </h1>
+      <nav id="gnb">
+        <ul class="depth1">
+          <li><a href="about.html">학과소개</a>
+            <ul class="depth2">
+              <li><a href="#">학과소개</a></li>
+              <li><a href="#">교육목표</a></li>
+              <li><a href="#">교육과정</a></li>
+              <li><a href="#">시설 및 환경</a></li>
+              <li><a href="#">오시는 길</a></li>
+            </ul>
+          </li>
+          <li><a href="#">교수진</a>
+            <ul class="depth2">
+              <li><a href="#">학과소개</a></li>
+            </ul>
+          </li>
+          <li><a href="#">무용단 소개</a>
+            <ul class="depth2">
+              <li><a href="#">한국무용</a></li>
+              <li><a href="#">현대무용</a></li>
+              <li><a href="#">발레</a></li>
+            </ul>
+          </li>
+          <li><a href="#">공지사항</a>
+            <ul class="depth2">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">열림마당</a></li>
+              <li><a href="#">Q&A</a></li>
+            </ul>
+          </li>
+          <li><a href="#">학과활동</a>
+            <ul class="depth2">
+              <li><a href="#">학과활동</a></li>
+            </ul>
+          </li>
+          <li><a href="#">무용과 행사</a>
+            <ul class="depth2">
+              <li><a href="#">창작발표회</a></li>
+              <li><a href="#">졸업발표회</a></li>
+              <li><a href="#">공연 및 행사</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- 토글버튼 -->
+      <a href="#sitemap-menu" class="btn-toggle">
+        <img src="../images/icon/menu-icon.svg" alt="toggle sitemap">
+      </a>
+    </div>
+    <!--container-->
+  </header>
+
+  <!--  서브페이지 타이틀 -->
+  <section id="sub-title">
+    <div class="container">
+      <h1>학과소개</h1>
+    </div> <!-- container -->
+  </section>
+
+
+  <!-- 로컬 메뉴(Local Navigation Bar)= 서브메뉴 -->
+  <nav id="lnb">
+    <div class="container">
+      <ul>
+        <li><a href="#">학과소개</a></li>
+        <li><a href="#">교육목표</a></li>
+        <li><a href="#">교육과정</a></li>
+        <li><a href="#">시설 및 환경</a></li>
+        <li><a href="#">오시는 길</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <!-- 사이트맵 -->
+  <div id="site-map-menu">
+    <div class="container">
+      <div class="logo">
+        <a href="./"><img src="../images/contents/logo.png" alt="숙명여대무용과"></a>
+        <button id="close"><img src="../images/icon/popup-icon.svg" alt="닫기"></button>
+      </div>
+      <!--logo-->
+      <nav id="site-menu">
+        <ul class="depth1">
+          <li><a href="#">학과소개</a>
+            <ul class="depth2">
+              <li><a href="../pages/about.html">학과소개</a></li>
+              <li><a href="#">교육목표</a></li>
+              <li><a href="#">교육과정</a></li>
+              <li><a href="#">시설 및 환경</a></li>
+              <li><a href="#">오시는 길</a></li>
+            </ul>
+          </li>
+          <li><a href="#">교수진</a>
+            <ul class="depth2">
+              <li><a href="#">학과소개</a></li>
+            </ul>
+          </li>
+          <li><a href="#">무용단 소개</a>
+            <ul class="depth2">
+              <li><a href="#">한국무용</a></li>
+              <li><a href="#">현대무용</a></li>
+              <li><a href="#">발레</a></li>
+            </ul>
+          </li>
+          <li><a href="#">공지사항</a>
+            <ul class="depth2">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">열림마당</a></li>
+              <li><a href="#">Q&A</a></li>
+            </ul>
+          </li>
+          <li><a href="#">학과활동</a>
+            <ul class="depth2">
+              <li><a href="#">학과활동</a></li>
+            </ul>
+          </li>
+          <li><a href="#">무용과 행사</a>
+            <ul class="depth2">
+              <li><a href="#">창작발표회</a></li>
+              <li><a href="#">졸업발표회</a></li>
+              <li><a href="#">공연 및 행사</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!--container-->
+  </div>
+
+
+
+  <section id="main-footer">
+    <div class="container">
+      <div class="footer-group">
+        <div class="footer-menu">
+          <a href="#"><strong>개인정보처리방침</strong></a>
+          <span>|</span>
+          <a href="#">이메일 무단수집거부</a>
+        </div>
+        <address>
+          04308 서울특별시 용산구 청파로47나길 90 숙명여자대학교 새빛관
+          | TEL : 02-710-9450 | FAX : 02-710-9848
+        </address>
+        <p class="copy">Copyrightⓒ2022 Sookmyung Women's University. All rights reserved.</p>
+        <!--footer-menu -->
+      </div>
+    </div>
+    <!--container-->
+  </section>
+</body>
+
+</html>
