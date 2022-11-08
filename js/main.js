@@ -2,6 +2,7 @@
 
 console.log("main.js");
 
+// 메인 이미지 슬라이더
 $(function () {
   // 배너 이미지 배열
   let bgArr = [
@@ -26,7 +27,18 @@ $(function () {
     $("#main-banner .container").css({
       "background-image": `url(${bgArr[bg_img_num]})`,
     });
-  }, 3000);
+  }, 5000);
 });
 // 1초가 1000이구나
 // ``< 백틱 <  `편하게 쓸 때 텍스트 ${함수}`
+
+// 사이트맵 버튼
+$(function () {
+  $(".btn-toggle").on("click", function () {
+    $("#site-map-menu").toggleClass("show");
+  });
+
+  $("#close").on("click", function () {
+    $("#site-map-menu").removeClass("show");
+  });
+});
