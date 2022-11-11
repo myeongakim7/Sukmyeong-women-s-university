@@ -10,7 +10,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!-- 내 자바스크립트 -->
   <script src="./js/main.js"></script>
-  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+  <!-- 모바일 CSS -->
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+  <!-- PC CSS -->
+  <link rel="stylesheet" href="css/style.css" media="screen and (min-width: 768px)">
 </head>
 
 <body>
@@ -25,11 +30,11 @@
         <ul class="depth1">
           <li><a href="#">학과소개</a>
             <ul class="depth2">
-              <li><a href="#">학과소개</a></li>
+              <li><a href="./pages/about.html">학과소개</a></li>
               <li><a href="#">교육목표</a></li>
               <li><a href="#">교육과정</a></li>
               <li><a href="#">시설 및 환경</a></li>
-              <li><a href="#">오시는 길</a></li>
+              <li><a href="./pages/location.html">오시는 길</a></li>
             </ul>
           </li>
           <li><a href="#">교수진</a>
@@ -66,56 +71,68 @@
         </ul>
       </nav>
       <!-- 토글버튼 -->
-      <a href="#sitemap-menu" class="btn-toggle">
+      <a href="#sitemap-menu" id="btn-toggle">
         <img src="./images/icon/menu-icon.svg" alt="toggle sitemap">
       </a>
     </div>
     <!--container-->
   </header>
-
+  <!-- site-map-menu -->
   <div id="site-map-menu">
     <div class="container">
       <div class="logo">
-        <a href="./"><img src="images/contents/logo.png" alt="숙명여대무용과"></a>
+        <a href="index.html"><img src="images/contents/logo.png" alt="숙명여대무용과"></a>
         <button id="close"><img src="./images/icon/popup-icon.svg" alt="닫기"></button>
       </div>
       <!--logo-->
       <nav id="site-menu">
         <ul class="depth1">
-          <li><a href="#">학과소개</a>
+          <li><a href="#">학과소개
+              <img src="./images/icon/mobile-menu-icon.svg" alt="depth1-icon">
+            </a>
             <ul class="depth2">
-              <li><a href="#">학과소개</a></li>
+              <li><a href="./pages/about.html">학과소개</a></li>
               <li><a href="#">교육목표</a></li>
               <li><a href="#">교육과정</a></li>
               <li><a href="#">시설 및 환경</a></li>
               <li><a href="#">오시는 길</a></li>
             </ul>
           </li>
-          <li><a href="#">교수진</a>
+          <li><a href="#">교수진
+              <img src="./images/icon/mobile-menu-icon.svg" alt="depth1-icon">
+            </a>
             <ul class="depth2">
               <li><a href="#">학과소개</a></li>
             </ul>
           </li>
-          <li><a href="#">무용단 소개</a>
+          <li><a href="#">무용단 소개
+              <img src="./images/icon/mobile-menu-icon.svg" alt="depth1-icon">
+            </a>
             <ul class="depth2">
               <li><a href="#">한국무용</a></li>
               <li><a href="#">현대무용</a></li>
               <li><a href="#">발레</a></li>
             </ul>
           </li>
-          <li><a href="#">공지사항</a>
+          <li><a href="#">공지사항
+              <img src="./images/icon/mobile-menu-icon.svg" alt="depth1-icon">
+            </a>
             <ul class="depth2">
               <li><a href="#">공지사항</a></li>
               <li><a href="#">열림마당</a></li>
               <li><a href="#">Q&A</a></li>
             </ul>
           </li>
-          <li><a href="#">학과활동</a>
+          <li><a href="#">학과활동
+              <img src="./images/icon/mobile-menu-icon.svg" alt="depth1-icon">
+            </a>
             <ul class="depth2">
               <li><a href="#">학과활동</a></li>
             </ul>
           </li>
-          <li><a href="#">무용과 행사</a>
+          <li><a href="#">무용과 행사
+              <img src="./images/icon/mobile-menu-icon.svg" alt="depth1-icon">
+            </a>
             <ul class="depth2">
               <li><a href="#">창작발표회</a></li>
               <li><a href="#">졸업발표회</a></li>

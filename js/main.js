@@ -34,7 +34,7 @@ $(function () {
 
 // 사이트맵 버튼
 $(function () {
-  $(".btn-toggle").on("click", function () {
+  $("#btn-toggle").on("click", function () {
     $("#site-map-menu").toggleClass("show");
   });
 

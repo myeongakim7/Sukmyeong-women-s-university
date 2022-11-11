@@ -1,0 +1,146 @@
+/* sub.css */
+
+/* sub page용 타이틀 (서브 공통) */
+#sub-title h1 {
+  font-size: 40px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.active {
+  font-weight: bold;
+}
+#sub-title {
+  height: 300px;
+  background: #999;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+#lnb .container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-align: center;
+}
+#lnb ul li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* 고유 영역 */
+/* about */
+#sub-title {
+  height: 300px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+#about #sub-title {
+  background-image: url(../images/contents/sub-title-visual.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Lnb */
+#about #lnb .container {
+  border-bottom: 1px solid #cccccc;
+}
+
+#about #lnb ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#about #lnb ul a {
+  margin-left: 40px;
+}
+.active {
+  font-weight: bold;
+}
+/* 차곡차곡 쌓아진 애가 더 쎄다 
+쓰고싶으면 차곡차곡 쌓기 */
+
+/* Section1 */
+#section1 .container {
+  padding: 50px 20px;
+}
+
+#section1 .container .sec1-text h1 {
+  margin-bottom: 30px;
+}
+
+/* Section2 */
+
+#section2 .container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  gap: 2%;
+  /* gap - px보다 %가 더 자연스럽게 맞춰서 늘어남 */
+}
+#section2 .container .item img {
+  margin-bottom: 20px;
+}
+
+#section2 .container .item h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* >>가변 레이아웃<< item에 고정너비, img에 100%안주면 고정형됨.  */
+#section2 .item {
+  /* outline: 1px solid red; */
+  width: 33.33%;
+}
+
+#section2 img {
+  width: 100%;
+}
+
+/* 고정 / 가변 레이아웃 차이 - 스크롤 유무 ( 고정은 O / 가변은 X ) */
+
+/* location */
+#location #sub-title {
+  background-image: url("../images/contents/location.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#location #map .container {
+  padding: 70px 0 50px;
+}
+
+#location .location-info .container {
+  /* outline: 1px solid #333; */
+  display: flex;
+}
+
+#location .location-info .container img {
+  width: 50%;
+}
+
+#location .location-info .container .address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+#location th,
+td {
+  padding: 5px;
+  padding-left: 1em;
+}
+
+#location th {
+  text-align: left;
+  vertical-align: top;
+  font-size: 20px;
+}
