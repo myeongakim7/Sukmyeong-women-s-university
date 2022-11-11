@@ -29,6 +29,7 @@
 }
 
 /* 고유 영역 */
+
 /* about */
 #sub-title {
   height: 300px;
@@ -43,6 +44,10 @@
   background-image: url(../images/contents/sub-title-visual.jpg);
   background-repeat: no-repeat;
   background-position: center;
+}
+/* 사이트맵 메뉴*/
+#about #site-map-menu .container .logo > img {
+  display: none;
 }
 
 /* Lnb */

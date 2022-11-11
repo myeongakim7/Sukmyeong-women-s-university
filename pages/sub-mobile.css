@@ -1,0 +1,159 @@
+/* sub-mobile.css */
+
+/* Gnb */
+#about #gnb,
+#location #gnb,
+#introduction #gnb {
+  display: none;
+}
+
+/* 사이트맵 메뉴*/
+#about #site-map-menu .container .logo > a {
+  display: none;
+}
+#about #site-map-menu {
+  width: 100%;
+  height: 70;
+}
+
+/* Lnb */
+#about #lnb .container,
+#location #lnb .container,
+#introduction #lnb .container {
+  display: none;
+}
+
+/* sub page용 타이틀 (서브 공통) */
+
+#sub-title h1 {
+  font-size: 40px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+#sub-title {
+  height: 300px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* about */
+
+#about #sub-title {
+  background-image: url(../images/contents/sub-title-visual.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* sec 1 */
+#about #section1 .container .sec1-text {
+  padding: 50px 20px;
+  border-bottom: 1px solid #ccc;
+}
+#about #section1 .container .sec1-text h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* sec 2 */
+#about #section2 .container {
+  padding: 50px 20px;
+}
+#about #section2 .container .item {
+  margin-bottom: 45px;
+}
+#about #section2 .container .item img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+#about #section2 .container .item h2 {
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+/* location */
+#location #sub-title {
+  background-image: url("../images/contents/location.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#location #map .container {
+  padding: 50px 20px;
+}
+
+#location .location-info .container {
+  /* outline: 1px solid #333; */
+  padding: 50px 20px;
+}
+
+#location .location-info .container img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+#location .location-info .container .address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#location th,
+td {
+  padding: 5px;
+  padding-left: 1em;
+}
+
+#location th {
+  text-align: left;
+  vertical-align: top;
+  font-size: 20px;
+}
+
+/* 3-1.css */
+/* sub3-1 무용단소개 > introduction 한국무용 */
+
+#introduction #sub-title {
+  background-image: url("../images/contents/main-banner2.jpg");
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#introduction main .container .section1 {
+  padding: 50px 20px;
+}
+#introduction main .container .section1 > h1 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+#introduction main .container .section2 {
+  padding: 50px 20px;
+  background-color: rgba(204, 204, 204, 0.307);
+}
+
+#introduction main .container .section2 .section2-title {
+  margin-bottom: 20px;
+}
+#introduction main .container .section2 .listbox {
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.col {
+  width: 50%;
+}
+
+.col h3 {
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
